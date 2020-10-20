@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-10-2020 a las 23:30:34
+-- Tiempo de generación: 20-10-2020 a las 02:27:24
 -- Versión del servidor: 10.1.38-MariaDB
 -- Versión de PHP: 7.3.4
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `academico1`
+-- Base de datos: `academico`
 --
 
 -- --------------------------------------------------------
@@ -103,6 +103,26 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id`, `ci`, `clave`, `login`, `color`) VALUES
+(1, 1233, '1233', '1233MH', ''),
+(2, 13211, '13211', '13211MF', ''),
+(3, 15312, '15312', '15312JG', ''),
+(4, 15531, '15531', '15531JP', ''),
+(5, 34123, '34123', '34123PM', ''),
+(6, 34312, '34312', '34312PM', ''),
+(7, 65423, '65423', '65423MA', ''),
+(8, 66431, '66431', '66431MA', ''),
+(9, 75323, '75323', '75323AB', ''),
+(10, 75456, '75456', '75456MB', ''),
+(11, 82341, '82341', '82341RC', ''),
+(12, 84231, '84231', '84231RC', ''),
+(13, 97655, '97655', '97655PD', ''),
+(14, 104312, '104312', '104312JE', '');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -140,7 +160,7 @@ ALTER TABLE `notas`
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- Restricciones para tablas volcadas
